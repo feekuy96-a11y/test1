@@ -33,7 +33,7 @@ input,select{width:100%;padding:9px 12px;border:1px solid var(--bd);border-radiu
 </style></head><body><div id="app"></div><div id="md"><div id="mc"></div></div><div id="toast"></div>
 <script>
 /* ===== ตั้งค่า: ใส่ค่าของคุณ (anon key เปิดเผยได้ ความปลอดภัยอยู่ที่ RLS ใน schema.sql) ===== */
-const CFG={SUPABASE_URL:'',SUPABASE_ANON:'',BRIDGE_URL:''};
+const CFG={SUPABASE_URL:'https://qdqzrgcrtgqlrgeubxgw.supabase.co',SUPABASE_ANON:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFkcXpyZ2NydGdxbHJnZXVieGd3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA3MDM0MjQsImV4cCI6MjEwNjI3OTQyNH0.-vAb8hdP49kOH7HFJSqotq63chqLCeLtzkx6KjubBN4',BRIDGE_URL:'https://script.google.com/macros/s/AKfycbxYwTLcmR__CTK3ahTzK7Eo7DdKu0CesZK9IvUxH8V0UsG6lHDxPMPIcbvIX03SYv2yXw/exec'};
 /* ===== พื้นฐาน ===== */
 const $=s=>document.querySelector(s),e=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),B=n=>'฿'+Number(n||0).toLocaleString('th-TH',{maximumFractionDigits:2});
 const sb=CFG.SUPABASE_URL&&CFG.SUPABASE_ANON?supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON):null;
